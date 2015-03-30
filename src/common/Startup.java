@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class Startup {
 
@@ -49,6 +51,18 @@ public class Startup {
        for (Employee key : keys){
            System.out.println(key);
        }
+       
+       TreeMap<String, Employee> tmap = new TreeMap<String, Employee>();
+       tmap.put("333-22-4444", e1);
+       tmap.put("666-44-8888", e2);
+       tmap.put("111-22-3333", e3);
+       tmap.put("333-22-4444", e4);
+       
+       TreeSet tset = new TreeSet();
+       tset.add(e1);
+       tset.add(e2);
+       tset.add(e3);
+       tset.add(e4);
        
     }
 }
